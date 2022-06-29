@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    width: 100vw;
+    height: 100vw;
+    overflow: hidden;
+    background-color: #090b1a;
+    font-family: 'Lexend Deca', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 80px auto;
+    width: 80%;
+    max-width: 1440px;
+    border-radius: 20px;
+    background-color: #1b1938;
+}
+section.left{
+    width: 50%;
+}
+
+#top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+}
+
+#top h1{
+    font-size: 3vw;
+    margin: 20px 30px;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+
+#top span{
+    color: #aa5cdb;
+}
+
+#top p{
+    font-size: 20px;
+    margin: 20px 30px;
+    color: #ffffffbf;
+}
+
+#bottom{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+#bottom h2{
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#bottom span{
+    color: #ffffffbf;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+section.banner-top{
+    display: none;
+    width: 50%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: hsl(277, 64%, 61%);
+}
+.banner-top{
+    background:
+    linear-gradient(
+        rgba(59, 6, 93, 0.57),rgba(60, 6, 93, 0.57)
+    ),
+    url(images/image-header-mobile.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.banner-bottom{
+    width: 50%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: hsl(277, 64%, 61%);
+}
+.banner-bottom{
+    background:
+    linear-gradient(
+        rgba(59, 6, 93, 0.57),rgba(60, 6, 93, 0.57)
+    ),
+    url(images/image-header-desktop.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*DISPOSITIVOS MÓVEIS*/
+@media (min-width: 320px) and (max-width: 480px){
+    body{
+        overflow: hidden visible;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 40px auto;
+        width: 80%;
+    }
+    section.left{
+        width: 100%;
+    }
+    
+    #top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #top h1{
+        font-size: 6vw;
+    }
+
+    #top p{
+        font-size: 15px;
+    }
+    
+    #bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    section.banner-top{
+        display: block;
+        height: 400px;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 0;
+        background:linear-gradient(rgba(59, 6, 93, 0.57),rgba(60, 6, 93, 0.57)),url(images/image-header-mobile.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .banner-bottom{
+        display: none;
+    } 
+}
+
+/*IPADS, TABLETS*/
+@media (min-width: 481px) and (max-width: 768px){
+    body{
+        overflow: hidden visible;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 40px auto;
+        width: 80%;
+        height: 800px;
+    }
+    section.left{
+        width: 100%;
+    }
+    
+    #top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #top h1{
+        font-size: 4.5vw;
+    }
+
+    #top p{
+        font-size: 15px;
+    }
+    
+    #bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    section.banner-top{
+        display: block;
+        height: 400px;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 0;
+        background:linear-gradient(rgba(59, 6, 93, 0.57),rgba(60, 6, 93, 0.57)),url(images/image-header-mobile.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .banner-bottom{
+        display: none;
+    }
+    
+}
+   
+
+/*TELAS PEQUENAS, LAPTOPS*/
+@media (min-width: 769px) and (max-width: 1024px){
+    body{
+        overflow: hidden visible;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 40px auto;
+        height: 800px;
+        width: 60%;
+    }
+    section.left{
+        width: 100%;
+    }
+    
+    #top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #top h1{
+        font-size: 4vw;
+    }
+
+    #top p{
+        font-size: 18px;
+    }
+    
+    #bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    section.banner-top{
+        display: block;
+        height: 400px;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 0;
+        background:linear-gradient(rgba(59, 6, 93, 0.57),rgba(60, 6, 93, 0.57)),url(images/image-header-mobile.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .banner-bottom{
+        display: none;
+    }
+    
+}
+
+
